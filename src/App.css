@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #222222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-image: url("../src/images/bg-marvel.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header > img {
+  height: 290px;
+}
+
+.container {
+  margin: 30px 350px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 105px 64px;
+}
+
+.card {
+  width: 250px;
+  height: 369px;
+  border: 1px solid #f2f2f2;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  color: #ffff;
+}
+.card > div {
+  position: relative;
+  top: -52px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 15px;
+}
+.card > div > img{
+  width: 216px;
+  height: 324px;
+}
+.card > p {
+  position: relative;
+
+  bottom: 35px;
+
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination {
+  color: #7e7e7e;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pagination-container {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.pagination-container > button {
+  border: none;
+  color: #7e7e7e;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.paginationButton{
+  cursor: pointer;
+}
+
+.paginationButton:hover{
+  text-decoration: underline;
+}
+
+.currentPage {
+  background-color: #7e7e7e;
+  color: black;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.loading{
+  color: #f2f2f2;
+}
+
+
+
+
+
+
+
+/* media queries start */
+
+/*does not support above 1920px */
+
+/* leptop 1440px */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    height: 800px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    margin: 30px 50px;
+  }
+
+  .cards {
+    gap: 105px 85px;
+  }
+
+  .pagination-container {
+    margin-right: 50px;
   }
 }
+
+/* laptop 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: 550px;
+  }
+  header > img {
+    height: 180px;
+  }
+  .container {
+    margin: 30px 50px;
+  }
+
+  .cards {
+    gap: 105px 85px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* tablet 768px */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    height: 390px;
+    margin-bottom: 150px;
+  }
+  header > img {
+    height: 110px;
+    width: 250px;
+  }
+  .container {
+    margin: 30px 0px;
+  }
+  .cards {
+    gap: 120px 8px;
+  }
+  .pagination-container {
+    width: 100%;
+    margin: 0px 50px;
+  }
+}
+
+/* mobil l 425px */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  header {
+    height: 220px;
+    margin-bottom: 150px;
+  }
+  header > img {
+    height: 60px;
+    width: 150px;
+  }
+  .container {
+    margin: 30px 25px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* mobil m 375px */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  header {
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  header > img {
+    height: 60px;
+    width: 130px;
+  }
+  .container {
+    margin: 30px 25px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* mobil s 320px */
+@media only screen and (max-width: 320px) {
+  header {
+    height: 190px;
+    margin-bottom: 100px;
+  }
+  header > img {
+    height: 70px;
+    width: 120px;
+  }
+
+  .container {
+    margin: 30px 25px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* media queries end */
