@@ -12,6 +12,3 @@ https://developer.marvel.com/ API ını kullanarak geçen hafta ki çalışmanı
 ++ Axios kullanmanız önerilir.
 
 ++ CSS, HTML, JS ile devam edeceğiz. Projenizde ekstra CSS sablonları v.s kullanmayınız.
-
-
->>>>>>> 961f6b1e51b3e52682d37eaeed35558b9cbd00b3
