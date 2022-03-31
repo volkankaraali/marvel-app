@@ -5,7 +5,7 @@ function Card({ data }) {
   return (
     <div className="card">
       <div>
-        <img src={data.thumbnail.path + '.' + data.thumbnail.extension} alt="" />
+        <img src={data.thumbnail.path + '.' + data.thumbnail.extension} alt={data.name} />
       </div>
       <p>{data.name}</p>
     </div>

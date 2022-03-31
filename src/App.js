@@ -17,7 +17,6 @@ function App() {
   //creates marvelservice for manage api request.
   let marvelService = new MarvelService();
 
-  console.log(totalCharacters);
   useEffect(() => {
     setLoading(true);
 
