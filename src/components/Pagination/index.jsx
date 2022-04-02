@@ -35,7 +35,7 @@ function Pagination({ totalCharacters, currentPage, setCurrentPage }) {
         {/* first page always display */}
         <a className={`paginationButton ${displayCurrentPage == 1 ? 'currentPage' : ''}`} onClick={() => setCurrentPage(0)}>1</a>
 
-        {/* if display current page less than 4 pages ,second and third pages visible  */}
+        {/* if display current page less than 4 pages ,second, third,fourth pages visible  */}
         {
           displayCurrentPage <= 4 && (
             <a className={`paginationButton ${displayCurrentPage == 2 ? 'currentPage' : ''}`} onClick={() => setCurrentPage(1)}>2</a>
@@ -69,7 +69,7 @@ function Pagination({ totalCharacters, currentPage, setCurrentPage }) {
         }
 
 
-        {/* 3 pages button in middle */}
+        {/* 3 buttons visible when pagenumber>4 or <lastpage-3 */}
         {
           ((displayCurrentPage > 4) && (displayCurrentPage < totalPage - 3)) && (
             <>
@@ -116,14 +116,14 @@ function Pagination({ totalCharacters, currentPage, setCurrentPage }) {
         {/* if display current page bigger than last 4 pages,dots visible */}
         {
           displayCurrentPage < (totalPage - 3) && (
-            <div >...</div>
+            <a >...</a>
           )
         }
 
         {/* last page always visible */}
-        <div className={`paginationButton ${displayCurrentPage == totalPage && 'currentPage'}`} onClick={() => setCurrentPage(totalPage - 1)}>
+        <a className={`paginationButton ${displayCurrentPage == totalPage && 'currentPage'}`} onClick={() => setCurrentPage(totalPage - 1)}>
           {totalPage}
-        </div>
+        </a>
 
 
 

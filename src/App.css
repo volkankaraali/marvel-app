@@ -48,11 +48,12 @@ header > img {
 
   color: #ffff;
 }
+
 .card > div {
   position: relative;
   top: -52px;
   border-top: 1px solid #f2f2f2;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .card > div > img{
   width: 216px;
@@ -103,8 +104,8 @@ header > img {
   background-color: #7e7e7e;
   color: black;
   font-weight: bold;
-  border-radius: 1rem;
-  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
 }
 .hidden{
     visibility: hidden;
