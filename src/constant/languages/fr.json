@@ -1,0 +1,9 @@
+{
+    "characterName":"Le nom du caractère",
+    "searchInput": "Tapez le caractère que vous souhaitez rechercher",
+    "loading":"Chargement en cours...",
+    "characterNotFound":"Caractère Introuvable.",
+    "emptyDescription":"Il n'y a pas de descriptif.",
+    "comics":"Bande dessinée",
+    "emptyComics":"Il n'y a pas de bande dessinée."
+}

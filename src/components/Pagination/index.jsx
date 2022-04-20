@@ -11,9 +11,8 @@ function Pagination({ totalCharacters, currentPage, setCurrentPage }) {
 
   */}
 
-  const totalPage = (totalCharacters / 20) + 1;
+  const totalPage = Math.floor((totalCharacters / 20) + 1);
   const displayCurrentPage = currentPage + 1;
-
 
 
   const beforePage = () => {

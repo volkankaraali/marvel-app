@@ -1,0 +1,9 @@
+{
+    "characterName":"Karakter Adı",
+    "searchInput": "Aramak istediğiniz karakteri yazınız",
+    "loading":"Yükleniyor...",
+    "characterNotFound":"Karakter bulunamadı.",
+    "emptyDescription":"Açıklama bulunamadı.",
+    "comics":"Çizgi Romanlar",
+    "emptyComics":"Çizgi roman bulunamadı."
+}

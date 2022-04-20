@@ -1,0 +1,9 @@
+{
+    "characterName":"Charachter Name",
+    "searchInput": "Type the character you want to search",
+    "loading":"Loading...",
+    "characterNotFound":"Character Not Found.",
+    "emptyDescription":"There is not a description.",
+    "comics":"Comics",
+    "emptyComics":"There are not comics."
+}

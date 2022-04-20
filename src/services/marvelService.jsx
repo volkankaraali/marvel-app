@@ -12,4 +12,12 @@ export default class MarvelService {
   getCharactersByPage(pageNumber) {
     return axios.get('https://gateway.marvel.com:443/v1/public/characters?limit=20&offset=' + (pageNumber * 20) + '&ts=' + ts + '&apikey=' + process.env.REACT_APP_MARVEL_PUBLIC_API_KEY + '&hash=' + hascode);
   }
+
+  getCharactersByInput(input, limit) {
+    return axios.get(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${input}&limit=${limit}&ts=${ts}&apikey=${process.env.REACT_APP_MARVEL_PUBLIC_API_KEY}&hash=${hascode}`);
+  }
+
+  getCharacterById(id) {
+    return axios.get(`https://gateway.marvel.com:443/v1/public/characters/${id}?&ts=${ts}&apikey=${process.env.REACT_APP_MARVEL_PUBLIC_API_KEY}&hash=${hascode}`);
+  }
 }
